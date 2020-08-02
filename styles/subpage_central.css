@@ -1,0 +1,257 @@
+.content-block.central {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10%)[10];
+      grid-template-columns: repeat(10, 10%);
+  -ms-grid-rows: (33.33333%)[3];
+      grid-template-rows: repeat(3, 33.33333%);
+}
+
+.content-block__first {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1/1/2/7;
+  background-color: #FFFFFF;
+  background-color: #EE6677;
+  border: 1px solid #9A999E;
+}
+
+.content-block__first-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-block__first-titles h2 {
+  font-size: 26px;
+  padding: 0 0 0 8px;
+}
+
+.content-block__first-titles h3 {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 0 8px 0 0;
+}
+
+.content-block__second {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 4;
+  grid-area: 1/7/4/11;
+  background-color: #FFFFFF;
+  border: 1px solid #9A999E;
+}
+
+.content-block__third {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 2/1/4/4;
+  background-color: #FFFFFF;
+  border: 1px solid #9A999E;
+}
+
+.content-block__third h2 {
+  text-align: left;
+  background-color: red;
+  margin: 0;
+  padding: 17.45px 1vw;
+  font-size: 28px;
+}
+
+.content-block__fourth {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: 2/4/4/7;
+  background-color: #FFFFFF;
+  border: 1px solid #9A999E;
+  color: #5079A3;
+}
+
+.content-block__fourth-title-and-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17.45px 1vw 11.45px;
+}
+
+.content-block__fourth-title-and-logo h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.content-block__fourth-title-and-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.content-block__fourth-pld-pts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: auto;
+}
+
+.content-block__fourth-pld-pts span {
+  width: 40px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.content-block__fourth-pld-pts span:last-of-type {
+  margin-right: 16px;
+}
+
+@media (hover: none) {
+  .content-block__fourth-pld-pts span:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+.days-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20%)[5];
+      grid-template-columns: repeat(5, 20%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.day .line {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 2px;
+  margin: 8px 0;
+}
+
+.day span {
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+
+.day span:first-child {
+  font-size: 18px;
+}
+
+.day span:last-child {
+  font-size: 30px;
+}
+
+.last-transfers-wrapper {
+  height: calc(100% - 68.84px);
+  overflow: auto;
+}
+
+.last-transfer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12.5px 15px;
+  color: #FFFFFF;
+}
+
+.last-transfer:nth-of-type(odd) {
+  background-color: red;
+}
+
+.last-transfer:nth-of-type(even) {
+  background-color: #ff4d4d;
+}
+
+.last-transfer__footballer img {
+  width: 60px;
+  height: 70px;
+}
+
+.last-transfer__logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.last-transfer__price-and-surname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.last-transfer__price-and-surname img {
+  width: 100px;
+  margin: 0 8px;
+}
+
+.table {
+  height: calc(100% - 93.84px);
+  overflow: auto;
+}
+
+.table__element {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px calc(100% - 110px) 40px 40px;
+      grid-template-columns: 30px calc(100% - 110px) 40px 40px;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #9A999E;
+}
+
+.table__element:last-of-type {
+  border-bottom: none;
+}
+
+.table__element-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table__element-team img {
+  margin: 0 12px;
+  width: 30px;
+  height: 30px;
+}
+
+.table__element span {
+  font-size: 22px;
+  text-align: center;
+}
+/*# sourceMappingURL=subpage_central.css.map */
