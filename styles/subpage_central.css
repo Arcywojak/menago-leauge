@@ -1,3 +1,7 @@
+.gray-room-bg.central {
+  padding-bottom: 60px;
+}
+
 .content-block.central {
   display: -ms-grid;
   display: grid;
@@ -46,6 +50,7 @@
   -ms-grid-column-span: 4;
   grid-area: 1/7/4/11;
   background-color: #FFFFFF;
+  color: #5079A3;
   border: 1px solid #9A999E;
 }
 
@@ -56,12 +61,12 @@
   -ms-grid-column-span: 3;
   grid-area: 2/1/4/4;
   background-color: #FFFFFF;
+  color: #5079A3;
   border: 1px solid #9A999E;
 }
 
 .content-block__third h2 {
   text-align: left;
-  background-color: red;
   margin: 0;
   padding: 17.45px 1vw;
   font-size: 28px;
@@ -176,15 +181,14 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 12.5px 15px;
-  color: #FFFFFF;
 }
 
 .last-transfer:nth-of-type(odd) {
-  background-color: red;
+  background-color: white;
 }
 
 .last-transfer:nth-of-type(even) {
-  background-color: #ff4d4d;
+  background-color: #f7f7f7;
 }
 
 .last-transfer__footballer img {

@@ -1,7 +1,10 @@
     @import "./variables.scss";
+
+    .gray-room-bg.central{
+        padding-bottom: 60px;
+    }
     
     .content-block{
-       
 
     &.central{
         
@@ -38,16 +41,17 @@
     &__second{
         grid-area: 1/7/4/11;
         background-color: $white;
+        color: $steelBlue;
         border:1px solid $gray;
     }
     &__third{
         grid-area: 2/1/4/4;
         background-color: $white;
+        color: $steelBlue;
         border:1px solid $gray;
 
         h2{
             text-align: left;
-            background-color: red;
             margin: 0;
             padding: 17.45px 1vw;
             font-size: 28px;
@@ -136,13 +140,12 @@
     justify-content: space-around;
     align-items: center;
     padding: 12.5px 15px;
-    color:$white;
 
     &:nth-of-type(odd){
-        background-color: red;
+        background-color: white;
     }
     &:nth-of-type(even){
-        background-color: lighten(red, 15%);
+        background-color: darken($white, 3%);
     }
 
     &__footballer{
