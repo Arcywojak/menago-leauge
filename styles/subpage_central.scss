@@ -43,6 +43,7 @@
         background-color: $white;
         color: $steelBlue;
         border:1px solid $gray;
+
     }
     &__third{
         grid-area: 2/1/4/4;
@@ -62,6 +63,76 @@
         background-color: $white;
         border:1px solid $gray;
         color:$steelBlue;
+        position: relative;
+        overflow: hidden;
+
+        &-wrapper{
+            display: flex;
+            height:100%;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            transition: transform .6s ease-in-out;
+        }
+
+        &-nav{
+            position: absolute;
+            bottom:0;
+            right:18px;
+            width:130px;
+            background-color: $lavenderLight;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 8px;
+            align-items: center;
+            z-index: 5;
+            div{
+                cursor: pointer;
+                width:20px;
+                height:20px;
+                border-radius: 50%;
+                background-color: $lavenderDark;
+
+                transition: background-color .3s ease-in-out;
+
+                &:hover{
+                    background-color: darken($lavenderDark, 10%);
+                }
+
+                &.active{
+                    cursor: initial;
+                    background-color: white;
+
+                    &:hover{
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+        &-first-child{
+            position: absolute;
+            width: 100%;
+            height:100%;
+        }
+
+        &-second-child{
+            position: absolute;
+            top:0;
+            left:100%;
+            height:100%;
+            width: 100%;
+            background-color: lightblue;
+        }
+
+        &-third-child{
+            position: absolute;
+            top:0;
+            left:200%;
+            height:100%;
+            width: 100%;
+            background-color: lightgray;
+        }  
+        
 
         &-title-and-logo{
             display: flex;
@@ -91,11 +162,9 @@
                 margin-bottom: 6px;
 
                 &:last-of-type{
-                    margin-right: 16px;
+                    margin-right: 15px;
 
-                    @media(hover:none){
-                        margin-right: 0px;
-                    }
+                   
                   
                 }
             }
@@ -176,12 +245,14 @@
 
 .table{
     height:calc(100% - 93.84px);
-    overflow: auto;
-
+    overflow-y: overlay;
+    padding-bottom: 35px;
+   
     &__element{
         display: grid;
         grid-template-columns: 30px calc(100% - 110px) 40px 40px;
         padding-bottom: 5px;
+        padding-right: 16px;
         margin-bottom: 8px;
 
         border-bottom: 1px solid $gray;

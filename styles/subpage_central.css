@@ -81,6 +81,91 @@
   background-color: #FFFFFF;
   border: 1px solid #9A999E;
   color: #5079A3;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-block__fourth-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+}
+
+.content-block__fourth-nav {
+  position: absolute;
+  bottom: 0;
+  right: 18px;
+  width: 130px;
+  background-color: #BECEFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+}
+
+.content-block__fourth-nav div {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9EB3F9;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.content-block__fourth-nav div:hover {
+  background-color: #6e8df6;
+}
+
+.content-block__fourth-nav div.active {
+  cursor: initial;
+  background-color: white;
+}
+
+.content-block__fourth-nav div.active:hover {
+  background-color: white;
+}
+
+.content-block__fourth-first-child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.content-block__fourth-second-child {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.content-block__fourth-third-child {
+  position: absolute;
+  top: 0;
+  left: 200%;
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
 }
 
 .content-block__fourth-title-and-logo {
@@ -124,13 +209,7 @@
 }
 
 .content-block__fourth-pld-pts span:last-of-type {
-  margin-right: 16px;
-}
-
-@media (hover: none) {
-  .content-block__fourth-pld-pts span:last-of-type {
-    margin-right: 0px;
-  }
+  margin-right: 15px;
 }
 
 .days-wrapper {
@@ -225,7 +304,8 @@
 
 .table {
   height: calc(100% - 93.84px);
-  overflow: auto;
+  overflow-y: overlay;
+  padding-bottom: 35px;
 }
 
 .table__element {
@@ -234,6 +314,7 @@
   -ms-grid-columns: 30px calc(100% - 110px) 40px 40px;
       grid-template-columns: 30px calc(100% - 110px) 40px 40px;
   padding-bottom: 5px;
+  padding-right: 16px;
   margin-bottom: 8px;
   border-bottom: 1px solid #9A999E;
 }
