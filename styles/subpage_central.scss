@@ -9,9 +9,9 @@
     &.central{
         
         display: grid;
-      
         grid-template-columns: repeat(10, 10%);
         grid-template-rows: repeat(3, 33.333333333%);
+       
     }
  
 
@@ -202,6 +202,41 @@
             font-size: 22px;
             text-align: center;
         }
+
+    }
+}
+
+@media(max-width:1180px){
+    .content-block{
+        
+
+        &.central{
+            grid-template-columns: unset;
+            grid-template-rows: unset;
+            height: auto;
+
+            grid-template-areas: 
+            "first first"
+            "second second"
+            "third fourth";
+        }
+
+        &__first{
+            grid-area: first;
+        }
+        &__second{
+            grid-area: second; 
+            height:400px;
+        }
+        &__third{
+            grid-area: third;
+            height: 500px; 
+        }
+        &__fourth{
+            grid-area: fourth;
+            height: 500px; 
+        }
+        
 
     }
 }
