@@ -52,6 +52,8 @@
   background-color: #FFFFFF;
   color: #5079A3;
   border: 1px solid #9A999E;
+  overflow: auto;
+  padding-bottom: 30px;
 }
 
 .content-block__third {
@@ -338,6 +340,101 @@
 .table__element span {
   font-size: 22px;
   text-align: center;
+}
+
+.notification-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 120px calc(100% - 120px);
+      grid-template-columns: 120px calc(100% - 120px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 16px 16px 5px 8px;
+}
+
+.notification-wrapper__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.notification-wrapper__person .proffesion {
+  font-size: 12px;
+}
+
+.notification-wrapper__person .name {
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.notification-wrapper__person img {
+  width: 100px;
+  height: 130px;
+  border-radius: 6px;
+  -webkit-box-shadow: 2px -2px 42px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px -2px 42px -23px rgba(0, 0, 0, 0.75);
+}
+
+.notification-wrapper__message-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.notification-wrapper__message {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #9A999E;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: 500;
+  position: relative;
+  max-width: 700px;
+}
+
+.notification-wrapper__message a {
+  color: #009f00;
+}
+
+.notification-wrapper__message a:hover {
+  color: green;
+}
+
+.notification-wrapper__message .triangle {
+  position: absolute;
+  width: 15px;
+  top: 8px;
+  left: -14px;
+}
+
+.notification-wrapper__date {
+  color: #9A999E;
+  font-size: 14px;
+  display: block;
+  margin-left: auto;
+  padding-right: 8px;
 }
 
 @media (max-width: 1180px) {
